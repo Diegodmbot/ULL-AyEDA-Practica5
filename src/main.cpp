@@ -8,3 +8,5 @@ int main() {
   std::cout << key.getKey() << std::endl;
   return 0;
 }
+// TODO: Implementar menu
+// TODO: Implementar creacion de arrays aleatorios

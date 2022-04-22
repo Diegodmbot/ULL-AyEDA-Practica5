@@ -31,4 +31,4 @@ void omShellSort<T>::sort(std::vector<T> &vector_, int size) {
 
 #endif //P05DIEGODIAZMORON_INCLUDE_OMSHELLSORT_H_
 
-//TODO: Implementar el algoritmo de ordenamiento ShellSort
+//TODO: Implementar el algoritmo de ordenamiento ShellSort correctamente

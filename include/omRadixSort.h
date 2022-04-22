@@ -41,5 +41,4 @@ void omRadixSort<T>::sort(std::vector<T> &vector_, int size) {
 
 #endif //P05DIEGODIAZMORON_INCLUDE_OMRADIXSORT_H_
 
-// TODO: implement the radix sort algorithm
 // https://www.geeksforgeeks.org/radix-sort/

@@ -32,6 +32,7 @@ void omQuickSort<T>::sort(std::vector<T> &vector_, int size) {
     }
   }
   if (j > 0) omQuickSort<T>::sort(vector_, j);
-  if (i < size - 1) omQuickSort<T>::sort(vector_ + i, size - i);
+  // cambiar
+  if (i < size - 1) omQuickSort<T>::sort(vector_, size);
 }
 #endif //P05DIEGODIAZMORON_INCLUDE_OMQUICKSORT_H_

@@ -8,6 +8,7 @@
 template<typename T>
 class Key {
  public:
+  Key() = default;
   Key(T key) : key_(key) {}
   ~Key() = default;
 

@@ -10,12 +10,12 @@
 template <typename T>
 class omSelection : public OrdinationMethod<T> {
  public:
-  void sort(std::vector<T> vector_, int size);
+  void sort(std::vector<T> &vector_, int size);
 };
 
 // implement sort selection method passing the vector and the size
 template <typename T>
-void omSelection<T>::sort(std::vector<T> vector_, int size) {
+void omSelection<T>::sort(std::vector<T> &vector_, int size) {
   int min;
   T aux;
   for (int i = 0; i < size; i++) {

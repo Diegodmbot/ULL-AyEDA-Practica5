@@ -15,7 +15,7 @@ class omRadixSort : public OrdinationMethod<T> {
   void sort(std::vector<T> &vector_, int size);
 };
 
-// implements the radix sort algorithm passing the vector and the size of the vector
+// https://www.geeksforgeeks.org/radix-sort/
 template <typename T>
 void omRadixSort<T>::sort(std::vector<T> &vector_, int size) {
   for(int i = 1; kMinimunNumber / i > 0; i *= 10){
@@ -41,4 +41,3 @@ void omRadixSort<T>::sort(std::vector<T> &vector_, int size) {
 
 #endif //P05DIEGODIAZMORON_INCLUDE_OMRADIXSORT_H_
 
-// https://www.geeksforgeeks.org/radix-sort/

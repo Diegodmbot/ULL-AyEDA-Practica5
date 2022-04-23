@@ -7,7 +7,6 @@
 
 #include "OrdinationMethod.h"
 
-// omRadixSort class heredates from OrdinationMethod class
 template <typename T>
 class omShellSort : public OrdinationMethod<T> {
  public:

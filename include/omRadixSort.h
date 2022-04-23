@@ -16,6 +16,7 @@ class omRadixSort : public OrdinationMethod<T> {
 };
 
 // https://www.geeksforgeeks.org/radix-sort/
+
 template <typename T>
 void omRadixSort<T>::sort(std::vector<T> &vector_, int size) {
   for(int i = 1; kMinimunNumber / i > 0; i *= 10){
@@ -33,8 +34,9 @@ void omRadixSort<T>::sort(std::vector<T> &vector_, int size) {
       aux[count[digit] - 1] = vector_[j];
       count[digit]--;
     }
-    for (i = 0; i < size; i++)
+    for (i = 0; i < size; i++){
       vector_[i] = aux[i];
+    }
   }
 }
 

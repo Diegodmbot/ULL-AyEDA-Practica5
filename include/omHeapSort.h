@@ -25,6 +25,7 @@ void omHeapSort<T>::sort(std::vector<T> &vector_, int size) {
         vector_[j] = temp;
       }
     }
+    print(vector_, size);
   }
   for (int i = size - 1; i >= 0; i--) {
     temp = vector_[0];
@@ -37,6 +38,7 @@ void omHeapSort<T>::sort(std::vector<T> &vector_, int size) {
         vector_[j + 1] = temp;
       }
     }
+    print(vector_, size);
   }
 }
 

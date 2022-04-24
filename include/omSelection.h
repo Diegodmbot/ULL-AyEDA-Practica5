@@ -28,6 +28,7 @@ void omSelection<T>::sort(std::vector<T> &vector_, int size) {
     aux = vector_[i];
     vector_[i] = vector_[min];
     vector_[min] = aux;
+    print(vector_, size);
   }
 }
 

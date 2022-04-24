@@ -28,6 +28,7 @@ void omShellSort<T>::sort(std::vector<T> &vector_, int size) {
       }
       vector_[j] = temp;
     }
+    print(vector_, size);
   }
 }
 

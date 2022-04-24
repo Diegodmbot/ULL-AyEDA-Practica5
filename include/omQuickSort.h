@@ -17,7 +17,7 @@ class omQuickSort : public OrdinationMethod<T> {
 template<typename T>
 void omQuickSort<T>::sort(std::vector<T> &vector_, int start, int end) {
   if (start < end) {
-    int pivot = vector_[end];
+    T pivot = vector_[end];
     int i = start - 1;
     for (int j = start; j < end; j++) {
       if (vector_[j] <= pivot) {
@@ -27,6 +27,7 @@ void omQuickSort<T>::sort(std::vector<T> &vector_, int start, int end) {
     }
     std::swap(vector_[i + 1], vector_[end]);
     int p = i + 1;
+    print(vector_, vector_.size());
     sort(vector_, start, p - 1);
     sort(vector_, p + 1, end);
   }

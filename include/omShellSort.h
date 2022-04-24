@@ -17,7 +17,10 @@ template <typename T>
 void omShellSort<T>::sort(std::vector<T> &vector_, int size) {
   int j;
   T temp;
-  for (int h = size / 2; h > 0; h /= 2) {
+  std::cout << "Introduzca un alfa entre 0 y 1" << std::endl;
+  float alpha;
+  std::cin >> alpha;
+  for (int h = (size * alpha) / 2; h > 0; h /= 2) {
     for (int i = h; i < size; i++) {
       temp = vector_[i];
       for (j = i; j >= h && vector_[j - h] > temp; j -= h) {

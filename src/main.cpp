@@ -1,4 +1,5 @@
 #include <iostream>
+#include <random>
 
 #include "../include/Key.h"
 #include "../include/OrdinationMethod.h"
@@ -8,7 +9,7 @@
 #include "../include/omHeapSort.h"
 #include "../include/omRadixSort.h"
 
-typedef int keyType;
+typedef Key<int> keyType;
 
 int main(){
   std::cout << "ALGORITMO DE ORDENACION" << std::endl;
@@ -23,11 +24,13 @@ int main(){
   std::cout << "2. Manual" << std::endl;
   int option;
   std::cin >> option;
-  // si opcion es 1 llenar con numeros aleatorios de 1000 a 9999
+  std::random_device rd;
+  std::mt19937 gen(rd());
+  std::uniform_int_distribution<> dis(1000, 9999);
   switch (option) {
     case 1:
       for (int i = 0; i < size; i++) {
-        vector_[i] = (rand() % 9000) + kMinimunNumber;
+        vector_[i] = dis(gen);
       }
       break;
     case 2:
@@ -38,7 +41,7 @@ int main(){
       break;
     default:
       std::cout << "Opcion no valida" << std::endl;
-      break;
+      return 0;
   }
   // show vector
   std::cout << "Vector: ";
@@ -70,7 +73,7 @@ int main(){
       break;
     default:
       std::cout << "Opcion no valida" << std::endl;
-      break;
+      return 0;
   }
   // Ordenar el vector
   std::cout << "Ordenando..." << std::endl;

@@ -34,8 +34,8 @@ void omRadixSort<T>::sort(std::vector<T> &vector_, int size) {
       aux[count[digit] - 1] = vector_[j];
       count[digit]--;
     }
-    for (i = 0; i < size; i++){
-      vector_[i] = aux[i];
+    for (int k = 0; k < size; k++){
+      vector_[k] = aux[k];
     }
   }
 }

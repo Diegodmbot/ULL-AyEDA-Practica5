@@ -37,6 +37,7 @@ void omRadixSort<T>::sort(std::vector<T> &vector_, int size) {
     for (int k = 0; k < size; k++){
       vector_[k] = aux[k];
     }
+    print(vector_, size);
   }
 }
 
